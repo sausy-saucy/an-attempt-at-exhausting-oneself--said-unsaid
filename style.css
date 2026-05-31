@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Akzidenz';
+  src: url('/akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Regular.otf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Akzidenz';
+  src: url('/akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Italic.otf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Byron';
+  src: url('/byron/Byron.ttf');
+}
+
+@font-face {
+  font-family: 'Javel';
+  src: url('/Javel/JTJavel-Regular.ttf');
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Javel';
+  src: url('Javel/JTJavel-RegularItalic.ttf');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Javel';
+  src: url('Javel/JTJavel-SemiBold.ttf');
+  font-style: bold;
+}
+
+@font-face {
+  font-family: 'Javel';
+  src: url('Javel/JTJavel-MediumItalic.ttf');
+  font-style: oblique;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: white;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  padding: 15px 20px 8px;
+  background: white;
+  z-index: 10;
+  text-align: center;
+  border-radius: 1px;
+  font-family: 'Javel';
+  font-style: bold;
+}
+
+.wrapper {
+  flex: 1;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: grid;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.content,
+.chat {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.content {
+  padding: 70px;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.row:hover .note {
+  font-family: 'Javel';
+  font-style: regular;
+  font-size: 12pt;
+  background-color: #3a3aff;
+  padding-bottom: 2px;
+  padding-top: 6px;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.note {
+  text-align: center;
+  color: white;
+  z-index: 2;
+  font-family: 'Byron';
+  font-size: 20pt;
+  line-height: 1;
+}
+
+.date {
+  text-align: center;
+  color: rgb(235, 235, 235);
+  font-family: 'Akzidenz';
+  font-size: 8pt;
+}
+
+.time {
+  text-align: center;
+  color: rgb(235, 235, 235);
+  font-family: 'Akzidenz';
+  font-size: 8pt;
+}
+
+.chat {
+  display: flex;
+  gap: 60px;
+  padding: 40px;
+  z-index: 1;
+  pointer-events: none;
+  align-self: stretch;
+  font-family: 'Akzidenz';
+  font-size: 10pt;
+}
+
+.chat-left,
+.chat-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 1px;
+  background-image: url('tile.png');
+  background-repeat: repeat;
+  background-size: 20px 20px;
+  background-color: rgb(235, 235, 235);
+}
+
+.chat-left {
+  padding: 20px 12px 20px 12px
+}
+
+.chat-right {
+  padding: 20px 12px 20px 12px;
+}
+
+.chat-row {
+  display: flex;
+  gap: 8px;
+}
+
+.chat-row.a {
+  justify-content: flex-start;
+}
+
+.chat-row.b {
+  justify-content: flex-end;
+}
+
+.chat-msg {
+  max-width: 70%;
+  text-align: justify;
+}
+
+.chat-time {
+  color: grey;
+  font-size: 8pt;
+  white-space: nowrap;
+  align-self: flex-start;
+  margin-top: 3.5px;
+}
+
+.chat-date {
+  text-align: center;
+  color: grey;
+  font-size: 8pt;
+}
+
+.footer {
+    text-align: center;
+    padding-bottom: 40px;
+    font-family: 'Javel';
+    font-size: 10pt;
+}
