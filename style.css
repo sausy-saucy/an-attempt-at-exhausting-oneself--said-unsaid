@@ -6,13 +6,13 @@
 
 @font-face {
   font-family: 'Akzidenz';
-  src: url('/akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Regular.otf');
+  src: url('akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Regular.otf');
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Akzidenz';
-  src: url('/akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Italic.otf');
+  src: url('akzidenz/Akzidenz\ Grotesk\ Pro\ Regular\ Italic.otf');
   font-style: italic;
 }
 
