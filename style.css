@@ -143,6 +143,7 @@ body {
 
 .chat-left,
 .chat-right {
+  font-family: 'Akzidenz';
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -216,4 +217,13 @@ body {
   display: block;
   text-align: center;
   margin-top: 1em;
+}
+
+.colophon {
+  font-family: 'Akzidenz';
+  font-size: 8pt;
+  text-align: justify;
+  text-align-last: justify;
+  margin-top: 2em;
+  color: grey;
 }
