@@ -133,7 +133,7 @@ body {
 .chat {
   display: flex;
   gap: 60px;
-  padding: 40px;
+  padding: 40px 40px 0 40px;
   z-index: 1;
   pointer-events: none;
   align-self: stretch;
@@ -196,7 +196,24 @@ body {
 
 .footer {
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
+    margin: 0 auto;
+    padding: 20px 40px 10px 40px;
     font-family: 'Javel';
-    font-size: 10pt;
+    font-size: 11pt;
+}
+
+.footer p {
+  text-align: justify;
+  line-height: 1.1; 
+}
+
+.footer p + p {
+  text-indent: 0.8em;
+}
+
+.footer span, .footer a {
+  display: block;
+  text-align: center;
+  margin-top: 1em;
 }
